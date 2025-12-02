@@ -1,0 +1,7 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  button[aria-label="open sandbox"] {
+    display: none !important;
+  }
+}
