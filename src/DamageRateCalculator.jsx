@@ -279,11 +279,12 @@ const initialRiceFarmState = {
 
 const getRiceSampleCount = (targetAreaStr, insureAreaStr) => {
   const target = parseFloat(targetAreaStr) || parseFloat(insureAreaStr) || 0;
-  if (target >= 10000) return 8;
-  if (target >= 7500) return 7;
-  if (target >= 5000) return 6;
-  if (target >= 2500) return 5;
-  return 4;
+  if (target >= 6000) return 8;
+  if (target >= 5000) return 7;
+  if (target >= 4000) return 6;
+  if (target >= 3000) return 5;
+  if (target >= 2000) return 4;
+  return 3;
 };
 
 const getRiceSampleSum = (values, count) => {
@@ -3225,3 +3226,4 @@ export default function App() {
     </div>
   );
 }
+
